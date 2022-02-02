@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--color-black);
+
     padding: 1rem 2rem;
 }
 
@@ -15,7 +16,7 @@
 
 .app__navbar-logo img {
     width: 150px;
-} 
+}
 
 .app__navbar-links {
     flex: 1;
@@ -30,6 +31,7 @@
     margin: 0 1rem;
     cursor: pointer;
 }
+
 .app__navbar-links li:hover {
     color: var(--color-grey);
 }
@@ -43,7 +45,7 @@
 .app__navbar-login a {
     margin: 0 1rem;
     text-decoration: none;
-    transition: 0.5s ease;
+    transition: .5s ease;
 }
 
 .app__navbar-login a:hover {
@@ -53,7 +55,7 @@
 .app__navbar-login div {
     width: 1px;
     height: 30px;
-    background-color: var(--color-gray);
+    background: var(--color-grey);
 }
 
 .app__navbar-smallscreen {
@@ -67,7 +69,7 @@
     width: 100%;
     height: 100vh;
     background: var(--color-black);
-    transition: 0.5s ease;
+    transition: .5s ease;
 
     flex-direction: column;
     z-index: 5;
@@ -86,6 +88,7 @@
 .app__navbar-smallscreen_links {
     list-style: none;
 }
+
 .app__navbar-smallscreen_links li {
     margin: 2rem;
     cursor: pointer;
@@ -99,13 +102,13 @@
     color: var(--color-white);
 }
 
-@media  screen and (max-width: 2000px) {
+@media screen and (min-width: 2000px) {
     .app__navbar-logo img {
         width: 210px;
     }
 }
 
-@media  screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
     .app__navbar-links {
         display: none;
     }
@@ -115,7 +118,7 @@
     }
 }
 
-@media  screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .app__navbar {
         padding: 1rem;
     }
